@@ -30,15 +30,13 @@ En esta aplicación, los usuarios pueden:
 
 ### Capturas de pantalla
 
-¡Sube aquí tus capturas de pantalla!
-
 ![](./assets/images/captura-desk.png)
 ![](./assets/images/captura-mobile.png)
 
 ### Enlaces
 
 - URL del sitio en vivo: [Alura Geek](https://galaxypliego.github.io/AluraGeek-ONE_Challenge/)
-> **Nota**: Debido a que se utilizó `json-server` para simular una API, no es posible visualizar el sitio funcionando con la API en GitHub Pages. Sin embargo, puedes descargar el proyecto y seguir las instrucciones de instalación para ejecutarlo localmente. 👉 - [Instrucciones de instalación](#instrucciones-de-instalación)
+> **Nota**: Debido a que se utilizó `json-server` para simular una API, no es posible visualizar el sitio funcionando con la API en GitHub Pages. Sin embargo, puedes descargar el proyecto y seguir las instrucciones de instalación para ejecutarlo localmente. 👉 [Instrucciones de instalación](#instrucciones-de-instalación)
 
 ## Mi proceso
 
@@ -89,7 +87,7 @@ Para ejecutar este proyecto localmente, sigue estos pasos:
 1. **Clona el repositorio**:
 
     ```bash
-    git clone https://github.com/your-username/your-repo.git
+    git clone https://github.com/GalaxyPliego/AluraGeek-ONE_Challenge.git
     cd your-repo
     ```
 
