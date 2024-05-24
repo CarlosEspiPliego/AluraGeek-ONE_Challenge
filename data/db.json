@@ -1,0 +1,40 @@
+{
+  "products": [
+    {
+      "id": "5",
+      "name": "Harry Potter Wand",
+      "image_url": "https://m.media-amazon.com/images/I/41V7LIn92dS.jpg",
+      "price": 29.99
+    },
+    {
+      "id": "6",
+      "name": "Pokemon Plush Pikachu",
+      "image_url": "https://m.media-amazon.com/images/I/61yIBfgl1uL._AC_UF894,1000_QL80_.jpg",
+      "price": 24.99
+    },
+    {
+      "id": "7",
+      "name": "Nintendo Switch Console",
+      "image_url": "https://m.media-amazon.com/images/I/61WS2Fbvm5L.jpg",
+      "price": 299.99
+    },
+    {
+      "id": "8",
+      "name": "Minecraft Creeper Mug",
+      "image_url": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR3T3dPc9FlhApQ7of-bAfJfzZuZZLwWEscrs7pI1QIWA&s",
+      "price": 12.99
+    },
+    {
+      "id": "9",
+      "name": "Dungeons & Dragons Starter Set",
+      "image_url": "https://http2.mlstatic.com/D_NQ_NP_669151-MLM73642225374_122023-O.webp",
+      "price": 19.99
+    },
+    {
+      "id": "10",
+      "name": "Super Mario Bros. Keychain",
+      "image_url": "https://m.media-amazon.com/images/I/61LpARcy9fL._AC_UF894,1000_QL80_.jpg",
+      "price": 7.99
+    }
+  ]
+}

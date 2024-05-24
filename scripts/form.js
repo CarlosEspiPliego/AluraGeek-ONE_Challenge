@@ -1,14 +1,22 @@
 import { tiposError, mensajesError } from "./customErrors.js";
 import { closeModal } from "./modal.js";
+import { onAddProduct } from "./index.js";
 
 const form = document.getElementById('form__add-product');
 const inputsForm = form.querySelectorAll('[required]');
 const submitBtn = document.getElementById('add_product_btn');
 
+// Generar un ID aleatorio numérico
+const generateRandomId = () => {
+    return Math.floor(Math.random() * 1000).toString(); 
+};
+
 form.addEventListener('submit', (e) => {
     e.preventDefault();
     const formData = new FormData(form);
     const product = Object.fromEntries(formData.entries());
+    product.id = generateRandomId();
+    onAddProduct(product);
     form.reset();
     verificarFormulario();
     closeModal();
@@ -46,7 +54,7 @@ const verificarInput = (input) => {
     }
 
     // Validación personalizada para el input con name="image_url"
-    if (input.name === 'image' && !input.value.includes('https://')) {
+    if (input.name === 'image_url' && !input.value.includes('https://')) {
         mensaje = mensajesError.image.customError;
         input.setCustomValidity(mensaje);
     }
