@@ -1,0 +1,17 @@
+.nav__container {
+    background-color: var(--secondary-color);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 4rem;
+}
+
+.img__logo {
+    width: 8.625rem;
+}
+
+.title__navbar {
+    font-size: var(--h1-font-size);
+    color: var(--title-color-alt);
+}

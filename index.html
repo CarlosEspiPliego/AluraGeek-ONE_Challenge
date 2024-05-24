@@ -1,13 +1,238 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Alura Geek - ONE Challenge</title>
-    <link rel="stylesheet" href="./styles/index.css">
+    <link rel="stylesheet" href="./styles/index.css" />
+    <link rel="stylesheet" href="./styles/global/normalize.css" />
     <script type="module" src="./scripts/index.js" defer></script>
-</head>
-<body>
-    
-</body>
+    <script type="module" src="./scripts/modal.js" defer></script>
+    <script type="module" src="./scripts/form.js" defer></script>
+
+    <link
+      rel="stylesheet"
+      href="https://cdn.jsdelivr.net/npm/@tabler/icons-webfont@latest/dist/tabler-icons.min.css"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css"
+    />
+  </head>
+  <body>
+    <nav>
+      <div class="nav__container">
+        <img
+          class="img__logo"
+          src="./assets/images/hearts.png"
+          alt="AluraGeek logo"
+        />
+        <h1 class="title__navbar">Alura Geek</h1>
+      </div>
+    </nav>
+
+    <main class="main__section container">
+      <section class="products__section">
+        <div class="title__container">
+          <h2 class="title__products">Mis produtos</h2>
+        </div>
+
+        <div class="products__container">
+          <div class="product__card">
+            <div class="card__img-container">
+              <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRR2bQqutRCoz3rDlWb-8EKPty5sPC_l9d0-xDkXUg4JQ&s" alt="Product image" />
+            </div>
+            <div class="card__body">
+              <div class="name__container">
+                <p class="name__product">Gameboy 20011</p>
+              </div>
+              <div class="price__container">
+                <p class="price__product"><b>$ 200.00</b></p>
+                <i class="ti ti-trash icon_trash"></i>
+              </div>
+            </div>
+          </div>
+          <div class="product__card">
+            <div class="card__img-container">
+              <img src="./assets/images/imgDemo.png" alt="img" />
+            </div>
+            <div class="card__body">
+              <div class="name__container">
+                <p class="name__product">Gameboy 20011</p>
+              </div>
+              <div class="price__container">
+                <p class="price__product"><b>$ 200.00</b></p>
+                <i class="ti ti-trash icon_trash"></i>
+              </div>
+            </div>
+          </div>
+          <div class="product__card">
+            <div class="card__img-container">
+              <img src="./assets/images/imgDemo.png" alt="img" />
+            </div>
+            <div class="card__body">
+              <div class="name__container">
+                <p class="name__product">Gameboy 20011</p>
+              </div>
+              <div class="price__container">
+                <p class="price__product"><b>$ 200.00</b></p>
+                <i class="ti ti-trash icon_trash"></i>
+              </div>
+            </div>
+          </div>
+          <div class="product__card">
+            <div class="card__img-container">
+              <img src="./assets/images/imgDemo.png" alt="img" />
+            </div>
+            <div class="card__body">
+              <div class="name__container">
+                <p class="name__product">Gameboy 20011</p>
+              </div>
+              <div class="price__container">
+                <p class="price__product"><b>$ 200.00</b></p>
+                <i class="ti ti-trash icon_trash"></i>
+              </div>
+            </div>
+          </div>
+          <div class="product__card">
+            <div class="card__img-container">
+              <img src="./assets/images/imgDemo.png" alt="img" />
+            </div>
+            <div class="card__body">
+              <div class="name__container">
+                <p class="name__product">Gameboy 20011</p>
+              </div>
+              <div class="price__container">
+                <p class="price__product"><b>$ 200.00</b></p>
+                <i class="ti ti-trash icon_trash"></i>
+              </div>
+            </div>
+          </div>
+          <div class="product__card">
+            <div class="card__img-container">
+              <img src="./assets/images/imgDemo.png" alt="img" />
+            </div>
+            <div class="card__body">
+              <div class="name__container">
+                <p class="name__product">Gameboy 20011</p>
+              </div>
+              <div class="price__container">
+                <p class="price__product"><b>$ 200.00</b></p>
+                <i class="ti ti-trash icon_trash"></i>
+              </div>
+            </div>
+          </div>
+          <div class="product__card">
+            <div class="card__img-container">
+              <img src="./assets/images/imgDemo.png" alt="img" />
+            </div>
+            <div class="card__body">
+              <div class="name__container">
+                <p class="name__product">Gameboy 20011</p>
+              </div>
+              <div class="price__container">
+                <p class="price__product"><b>$ 200.00</b></p>
+                <i class="ti ti-trash icon_trash"></i>
+              </div>
+            </div>
+          </div>
+          <div class="product__card">
+            <div class="card__img-container">
+              <img src="./assets/images/imgDemo.png" alt="img" />
+            </div>
+            <div class="card__body">
+              <div class="name__container">
+                <p class="name__product">Gameboy 20011</p>
+              </div>
+              <div class="price__container">
+                <p class="price__product"><b>$ 200.00</b></p>
+                <i class="ti ti-trash icon_trash"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Boton flotante para agregar un nuevo producto -->
+      <button class="btn__add-product" id="open_modal_btn">
+        <i class="ti ti-plus"></i>
+      </button>
+    </main>
+
+    <!-- Modal para agregar nuevo producto -->
+    <section class="modal animate__animated animate__bounceInUp" id="modal">
+      <div class="modal__header">
+        <h4 class="title__modal">Agregar producto</h4>
+        <button class="btn__close-modal" id="close_modal_btn">
+          <i class="ti ti-x"></i>
+        </button>
+      </div>
+      <div class="modal__body">
+        <form action="" class="form__add-product" id="form__add-product">
+          <!-- Inputs de nombre, precio e imagen -->
+          <div class="form__group">
+            <label for="name">Nombre</label>
+            <input
+              type="text"
+              id="name"
+              name="name"
+              placeholder="Nombre del producto"
+              required
+            />
+            <span class="mensaje-error"></span>
+          </div>
+          <div class="form__group">
+            <label for="price">Precio</label>
+            <input
+              type="number"
+              id="price"
+              name="price"
+              placeholder="Precio del producto"
+              required
+            />
+            <span class="mensaje-error"></span>
+          </div>
+          <div class="form__group">
+            <label for="image">Imagen</label>
+            <input
+              type="text"
+              id="image"
+              name="image"
+              placeholder="URL de la imagen"
+              required
+            />
+            <span class="mensaje-error"></span>
+          </div>
+          <!-- botones para enviar y cancelar -->
+          <div class="modal__footer">
+            <button class="btn__cancel btn btn-outline" id="cancel_modal_btn">
+              Cancelar
+            </button>
+            <button disabled class="btn__add btn btn_disabled" id="add_product_btn" type="submit">
+              Agregar
+            </button>
+          </div>
+        </form>
+      </div>
+    </section>
+
+    <footer class="footer__section">
+      <div class="footer__container">
+        <div class="logo__container">
+          <img
+            class="img__logo"
+            src="./assets/images/hearts.png"
+            alt="AluraGeek logo"
+          />
+          <h1 class="title__logo">Alura Geek</h1>
+        </div>
+        <div>
+          <p class="footer__text">Desarrollado por <b>Carlos Espinoza</b></p>
+        </div>
+        <div>
+          <p class="footer__text">ALURA LATAM - 2024</p>
+        </div>
+      </div>
+    </footer>
+  </body>
 </html>

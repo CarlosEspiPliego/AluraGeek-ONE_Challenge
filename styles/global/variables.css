@@ -1,30 +1,76 @@
+/* Archivo para establecer los colores globales de la app */
 :root {
-    /* Primary colors */
-    --green: hsl(75, 94%, 57%);
+    --first-hue: 220;
+    --sat: 96%;
+    --lig: 28%;
+    --second-hue: 265;
+    --second-sat: 100%;
+    --second-lig: 39%;
 
-    /* Neutral */
-    --white: hsl(0, 0%, 100%);
-    --grey: hsl(0, 0%, 20%);
-    --dark-grey: hsl(0, 0%, 12%);
-    --off-black: hsl(0, 0%, 8%);
+    --primary-color: hsl(var(--first-hue), var(--sat), var(--lig));
+    --primary-color-hover: hsl(var(--first-hue), 84%, 45%);
+    --primary-color-active: hsl(var(--first-hue), 84%, 40%);
+
+    --secondary-color: hsl(var(--second-hue), var(--second-sat), var(--second-lig));
+    --secondary-color-hover: hsl(var(--second-hue), 100%, 45%);
+    --secondary-color-active: hsl(var(--second-hue), 100%, 40%);
+
+    --title-color: hsl(var(--second-hue), 87%, 10%);
+    --title-color-alt: hsl(var(--second-hue), 13%, 90%);
+    --text-color: hsl(var(--second-hue), 30%, 22%);
+    --text-color-light: hsl(var(--second-hue), 25%, 40%);
+
+    --text-color-btn: hsl(var(--second-hue), 32%, 92%);
+
+    --body-color: hsl(var(--second-hue), 94%, 100%);
 
     /*========== Font and typography ==========*/
-    --font-family: "Inter", sans-serif;
-    --font-title-shadow: 4rem;
-    --biggest-font-size: 2.5rem; /* 40px */
-    --line-height-biggest: 3rem;
-    --h1-font-size: 2.25rem; /* 36px */
-    --line-height-h1: 2.5rem; /* 40px */
-    --h2-font-size: 1.5rem; /* 24px */
-    --line-height-h2: 2rem; /* 32px */
-    --h3-font-size: 1.25rem; /* 20px */
-    --line-height-h3: 1.75rem; /* 28px */
-    --normal-font-size: .875rem; /* 16px */
-    --line-height-normal: 1.5rem; /* 24px */
-    --small-font-size: .875rem; /* 14px */
-    --line-height-small: 1.25rem; /* 20px */
-    --smaller-font-size: .75rem; /* 12px */
-    --line-height-smaller: 1rem; /* 16px */
-    --tiny-font-size: .625rem;  /* 10px */
-    --line-height-tiny: .875rem; /* 14px */
+    --title-font: "Press Start 2P", system-ui;
+    --body-font: "IBM Plex Mono", monospace;
+    --font-title-shadow: 2.5rem;
+    --biggest-font-size: 1.5rem; /* 24px */
+        --line-height-biggest: 2rem; /* 32px */
+        --h1-font-size: 1.25rem; /* 20px */
+        --line-height-h1: 1.75rem; /* 28px */
+        --h2-font-size: 1.125rem; /* 18px */
+        --line-height-h2: 1.5rem; /* 24px */
+        --h3-font-size: 1rem; /* 16px */
+        --line-height-h3: 1.25rem; /* 20px */
+        --normal-font-size: .875rem; /* 14px */
+        --line-height-normal: 1.125rem; /* 18px */
+        --small-font-size: .813rem; /* 13px */
+        --line-height-small: 1rem; /* 16px */
+        --smaller-font-size: .75rem; /* 12px */
+        --line-height-smaller: .875rem; /* 14px */
+        --tiny-font-size: .625rem;  /* 10px */
+        --line-height-tiny: .75rem; /* 12px */
+
+        --vh: calc(100vh - 6rem);
+
+        --vhmobile: 100vh;
+
+}
+
+/* Query de variables para desktop  */
+@media screen and (min-width: 768px) {
+    :root {
+        /*.5rem = 8px | 1rem = 16px ...*/
+        --font-title-shadow: 4rem;
+        --biggest-font-size: 2.5rem; /* 40px */
+        --line-height-biggest: 3rem;
+        --h1-font-size: 2.25rem; /* 36px */
+        --line-height-h1: 2.5rem; /* 40px */
+        --h2-font-size: 1.5rem; /* 24px */
+        --line-height-h2: 2rem; /* 32px */
+        --h3-font-size: 1.25rem; /* 20px */
+        --line-height-h3: 1.75rem; /* 28px */
+        --normal-font-size: 1rem; /* 16px */
+        --line-height-normal: 1.5rem; /* 24px */
+        --small-font-size: .875rem; /* 14px */
+        --line-height-small: 1.25rem; /* 20px */
+        --smaller-font-size: .75rem; /* 12px */
+        --line-height-smaller: 1rem; /* 16px */
+        --tiny-font-size: .625rem;  /* 10px */
+        --line-height-tiny: .875rem; /* 14px */
+    }
 }

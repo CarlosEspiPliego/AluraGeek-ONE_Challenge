@@ -1,0 +1,32 @@
+.footer__section {
+    background-color: var(--secondary-color);
+    height: 6rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: var(--title-color);
+    text-align: center;
+    gap: 1rem;
+    padding: 1rem;
+}
+
+.logo__container {
+    display: flex;
+    gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
+
+.img__logo {
+    height: 2rem;
+}
+
+.title__logo {
+    font-size: var(--h4-font-size);
+    color: white;
+}
+
+.footer__text {
+    font-size: var(--small-font-size);
+    color: white;
+}
